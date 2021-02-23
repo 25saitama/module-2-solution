@@ -1,2 +1,1 @@
-# module-2
-coursera course
+Coursera Course
