@@ -47,12 +47,11 @@ hr{
 #chicken, #sushi, #beef{
 	background-color: #C0C0C0;
 	padding: 1% 3%;
-	width: 80vw;
-	margin-right: auto;
-	margin-left: auto;
 	margin-bottom: 20px;
 	border:2px solid black;
 	height:auto;
+	margin-left: 20px;
+	margin-right: 10px;
 }
 
 #title_1, #title_2, #title_3{
@@ -80,6 +79,11 @@ hr{
 	font-size: 1.5vw;
 }
 
+#totop{
+	color: blue;
+	text-decoration: none;
+}
+
 /*------------------------------------------------------class selectors-------------------------------------------------*/
 .navbar-brand{
 	padding: 0px;
@@ -88,6 +92,13 @@ hr{
 	position: relative;
 }
 
+.col-12{
+		margin-left: 10px;
+		margin-right: 10px;
+		width: 91%
+	}
+
+
 
 /*-------------------------------------------------psuedo class selectors------------------------------------------------*/
 
@@ -95,5 +106,40 @@ hr{
 	color: red;
 }
 
+#totop:hover, #totop:active{
+	text-decoration: underline;
+}
 
 /*------------------------------------------------------media queries----------------------------------------------------*/
+
+@media(max-width: 575)
+{
+	
+}
+
+@media (min-width: 576px) and (max-width:767px)
+{
+	.col-sm-6 {
+    	width: 44.6%;
+    	margin-right: 0px;
+  	}
+
+  	.col-sm-6:nth-child(3n){
+  		width: 95%;
+  	}
+}
+
+@media (min-width: 768px) and (max-width: 991px)
+{
+	.col-md-4 {
+    	width: 29%;
+    	margin-right: 0px;
+	}
+}
+
+@media (min-width: 992px)
+{
+	.col-lg-4 {
+    	width: 30%;
+	}
+}
